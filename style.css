@@ -138,14 +138,7 @@ nav{
     font-size: 1.6rem;
 }
 
-#content{
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
 .inner{
-    /* border: 1px solid #1f72ce; */
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -240,7 +233,6 @@ nav{
 
 
 
-        /* shop page */
         /* Shop Page Specific Layout */
 .shop-container {
     display: flex;
@@ -297,22 +289,15 @@ nav{
     font-weight: bold;
 }
 
-/* Products Grid Styling */
 .shop-content {
     flex: 1;
-}
-
-.shop-header {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
     gap: 25px;
-    border: none !important; /* Overriding your index.html border */
+    border: none !important;
 }
 
 /* Card Improvements */
