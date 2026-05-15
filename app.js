@@ -5,20 +5,20 @@ var categoryList = document.getElementById('category-list');
 var allProducts = [];
 
 // 2. Popup Setup aur Timeout
-// window.addEventListener('DOMContentLoaded', () => {
-//     const overlay = document.getElementById('popup-overlay');
-//     const closeBtn = document.getElementById('close-btn');
+window.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('popup-overlay');
+    const closeBtn = document.getElementById('close-btn');
 
-//     setTimeout(() => {
-//         if (overlay) overlay.style.display = 'flex';
-//     }, 1000);
+    setTimeout(() => {
+        if (overlay) overlay.style.display = 'flex';
+    }, 1000);
 
-//     if (closeBtn) {
-//         closeBtn.addEventListener('click', () => {
-//             overlay.style.display = 'none';
-//         });
-//     }
-// });
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            overlay.style.display = 'none';
+        });
+    }
+});
 
 // 3. Fetch Products using separate API functions
 function fetchProductsAPI() {
