@@ -180,7 +180,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto; /* Button ko bottom mein push karega */
+    margin-top: auto; 
     padding-top: 15px;
 }
 
@@ -271,6 +271,19 @@ footer {
         margin-inline: auto;
         width: 100%;
     }
+
+    .about-section{
+        width: 100%;
+    }
+
+    .about-image img{
+        width: 100%;
+    }
+
+
+
+
+
 }
 
 /* Popup and Overlays */
