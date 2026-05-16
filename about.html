@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - shoping.pk</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -16,12 +17,15 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="homepage.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li class="active-link"><a href="about.html">About</a></li>
                 </ul>
             </div>
             <div class="right">
+                <!-- Logout button -->
+                <button id="logout-btn" class="logout-btn" onclick="logout()">Logout</button>
+
                 </div>
         </div>
     </nav>
@@ -87,5 +91,8 @@
         </div>
     </footer>
 
+
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
 </body>
 </html>
