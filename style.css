@@ -93,13 +93,6 @@
 /* Shop page css */
 /* ============================================================================================ */
 
-/* 1. Global Reset */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 /* 2. Navbar - Ab ye mobile par center ho jayega */
 nav {
@@ -110,7 +103,6 @@ nav {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
-    /* Elements niche shift ho sakein */
 }
 
 .left {
@@ -149,10 +141,21 @@ nav {
 }
 
 .active-link {
-    background-color: blue;
-    color: white !important;
+    background-color:  #1f72ce;
     padding: 2px 8px;
     border-radius: 4px;
+}
+
+.active-link a{
+    color: white !important;
+}
+
+
+.profileimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
 }
 
 .right {
@@ -177,7 +180,6 @@ nav {
 .main {
     display: grid;
     grid-template-columns: 250px 1fr;
-    /* Desktop: Sidebar 250px, baki content */
     gap: 20px;
     padding: 20px 5%;
     min-height: 80vh;
@@ -377,35 +379,20 @@ footer {
         width: 100%;
     }
 
-
-
-
-
+.stars {
+    display: inline-flex;
+    gap: 4px;            
+    vertical-align: middle; 
+    margin-left: 8px; 
 }
 
-/* Popup and Overlays */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
+.star {
+    font-size: 20px;
+    line-height: 1;
 }
 
-.popup-card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    position: relative;
-    width: 90%;
-    max-width: 350px;
-    text-align: center;
-    animation: slideDown 0.4s ease;
+
+
 }
 
 @keyframes slideDown {

@@ -4,21 +4,7 @@ var search = document.getElementById('search');
 var categoryList = document.getElementById('category-list');
 var allProducts = [];
 
-// 2. Popup Setup aur Timeout
-window.addEventListener('DOMContentLoaded', () => {
-    const overlay = document.getElementById('popup-overlay');
-    const closeBtn = document.getElementById('close-btn');
 
-    setTimeout(() => {
-        if (overlay) overlay.style.display = 'flex';
-    }, 1000);
-
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-            overlay.style.display = 'none';
-        });
-    }
-});
 
 // 3. Fetch Products using separate API functions
 function fetchProductsAPI() {
@@ -144,11 +130,11 @@ function renderProductCard(product) {
 
     var ratingValue = Math.round(product.rating || 0)
     for (var j = 1; j <= 5; j++) {
-        var star = document.createElement('div')
-        star.setAttribute('class', 'star')
-        star.innerText = "★"
-        star.style.color = j <= ratingValue ? "gold" : "lightgray"
-        starsContainer.appendChild(star)
+        var star = document.createElement('span');
+        star.setAttribute('class', 'star');
+        star.innerText = "★";
+        star.style.color = j <= ratingValue ? "gold" : "lightgray";
+        starsContainer.appendChild(star);
     }
 
     rating.appendChild(starsContainer)
